@@ -245,6 +245,9 @@ void cCmdInterp::setOutDir(std::string outDir)
 unsigned int cCmdInterp::verifyOneFile(std::string fileName) //fileName = sig file
 {
 	std::string instance;
+	std::cout << "file: " << fileName <<std::endl;
+
+	assert(fileName.find("-") != std::string::npos);
 	auto it = fileName.begin();
 	while (*it != '-')
 	{

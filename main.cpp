@@ -35,6 +35,10 @@ void printHelp() {
 	cout << "./chainsign --verify-chain my_instance-key1.pub --move good_keys" << endl;
 	cout << "./chainsign --verify-file sig_file" << endl;
 
+	cout << "CLIENT:" << endl;
+	cout << "./chainsign --client start" << endl;
+	cout << "./chainsign --client SIGN-NEXTKEY" << endl;
+	cout << "./chainsign --client filetosign" << endl;
 }
 
 bool isDaemonRunning() {
